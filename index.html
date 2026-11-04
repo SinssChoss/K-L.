@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Para: Mi amor</title>
+  <meta name="theme-color" content="#061633">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,600;1,9..144,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="retrato">
+        <img id="retrato" src="fotos/portada.jpeg" alt="Mi Crespa">
+        <span class="retrato-letra" id="retratoLetra" hidden>K</span>
+      </div>
+      <p class="para">Para: Mi amor</p>
+      <h1>La Crespa</h1>
+      <svg class="curls" viewBox="0 0 340 150" aria-hidden="true">
+        <path pathLength="1" d="M10 110 C10 40 70 40 70 80 C70 115 30 110 38 82 C48 55 95 60 100 95"/>
+        <path pathLength="1" d="M85 120 C80 40 150 25 150 70 C150 110 108 108 116 76 C125 45 175 55 178 100"/>
+        <path pathLength="1" d="M160 125 C158 35 230 22 230 68 C230 108 188 106 196 74 C205 42 255 52 258 98"/>
+        <path pathLength="1" d="M240 118 C238 40 305 30 305 72 C305 110 266 108 274 78 C282 50 325 58 330 95"/>
+        <path pathLength="1" d="M120 140 C170 150 220 150 270 138"/>
+      </svg>
+      <p class="lead">De Lima a Iquitos, cada día falta un poquito menos para nuestro primer abrazo.</p>
+    </header>
+
+    <section>
+      <h2>Falta poco para vernos</h2>
+      <div class="counter">
+        <label for="reencuentro">¿Qué día nos vemos en Iquitos?</label>
+        <input id="reencuentro" type="date" min="2020-01-01" max="2100-12-31">
+        <div class="days" id="cuenta" aria-live="polite">—<small>para nuestro primer abrazo</small></div>
+      </div>
+      <div class="counter segundo">
+        <label for="fecha">¿Desde qué día somos novios?</label>
+        <input id="fecha" type="date" min="2020-01-01" max="2100-12-31">
+        <div class="days chico" id="dias" aria-live="polite">—<small>días contigo</small></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Entre Lima e Iquitos</h2>
+      <svg class="ruta" viewBox="0 0 400 130" role="img" aria-label="Ruta de Lima a Iquitos">
+        <path id="camino" d="M40 100 C120 10 280 10 360 70" fill="none" stroke="#8fd0ff" stroke-width="3" stroke-dasharray="3 10" stroke-linecap="round"/>
+        <circle cx="40" cy="100" r="9" fill="#ffd88a"/>
+        <circle cx="360" cy="70" r="9" fill="#3d8bff"/>
+        <text x="40" y="124" text-anchor="middle" fill="#eef6ff" font-size="15" font-family="DM Sans, sans-serif">Lima</text>
+        <text x="360" y="102" text-anchor="middle" fill="#eef6ff" font-size="15" font-family="DM Sans, sans-serif">Iquitos</text>
+        <text font-size="22" text-anchor="middle">
+          ✈️
+          <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#camino"/>
+          </animateMotion>
+        </text>
+      </svg>
+      <p>Nos separan kilómetros, pero nos conocemos a través de cada mensaje y cada videollamada, donde nos mostramos los outfits del día y nos contamos todo. Lo que hemos construido a distancia está por convertirse en un abrazo de verdad.</p>
+    </section>
+
+    <section>
+      <h2>Mi Crespa en fotos</h2>
+      <p>Mis imágenes favoritas de ti. Toca cualquiera para verla grande.</p>
+      <div class="galeria" id="galeria"></div>
+    </section>
+
+    <section>
+      <h2>¿Por qué La Crespa?</h2>
+      <p>Tú no eres crespa, amor, y los dos lo sabemos. Pero te encanta mi cabello rizado, y por eso te quedaste con el apodo. Desde entonces eres mi Crespa, mi crespita, y nadie más lo puede ser.</p>
+    </section>
+
+    <section>
+      <h2>Por qué te amo</h2>
+      <p class="reason" id="razon" aria-live="polite">Toca el botón y te cuento.</p>
+      <button class="btn" id="otra" type="button">Otra razón</button>
+    </section>
+
+    <section>
+      <h2>Nuestros vacilones oficiales</h2>
+      <p>Entre bromas pesadas, celos de mentira y peleas por quién hace qué en la casa, nos reímos todos los días. Así que hagamos justicia:</p>
+      <button class="btn" id="sorteo" type="button">Sortear quién lava la ropa</button>
+      <p class="veredicto" id="veredicto" aria-live="polite"></p>
+    </section>
+
+    <section>
+      <h2>Para ti, mi vida</h2>
+      <div class="letter">
+        <p>Mi amor, contigo aprendí que el cariño se construye con palabras, risas y confianza, incluso a distancia.</p>
+        <p>Eres mi lugar para reír, para contarnos el día y para desahogarnos sin filtros. Si el colegio te cansa o hay dramas que te fastidian, aquí tienes a alguien que te escucha, te aconseja y respeta tu espacio.</p>
+        <p>Amorcito, cuando estés malita, cansada o con frío, ojalá poder estar ahí con una manta y un abrazo. Pronto lo voy a poder hacer.</p>
+        <p>Iquitos nos espera, mi crespita. Mientras tanto, cuento los días, igual que tú.</p>
+        <p class="sign">Te amo, mi Crespa.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Hecho con amor para mi Crespa, mi charapita hermosa, de Lima a Iquitos</footer>
+
+  <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada">
+    <button class="lb-x" id="lbX" type="button" aria-label="Cerrar">✕</button>
+    <button class="lb-nav prev" id="lbP" type="button" aria-label="Foto anterior">‹</button>
+    <figure class="lb-fig">
+      <img id="lbImg" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lb-nav next" id="lbN" type="button" aria-label="Foto siguiente">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
